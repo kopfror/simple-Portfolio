@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamza Shuibat | Portfolio</title>
+    <meta name="description" content="Hamza Shuibat, third-year Software Engineering student at Bethlehem University.">
+    <link rel="icon" href="images/favicon.svg?v=3" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ===================== HEADER ===================== -->
+    <header class="header">
+        <nav class="nav box">
+            <a href="#home" class="logo">HS</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact" class="nav-contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <!-- ===================== HERO ===================== -->
+        <section id="home" class="hero">
+            <div class="hero-text">
+                <p class="badge">Third-year Software Engineering student</p>
+                <h1>Hamza<br>Shuibat</h1>
+                <p class="hero-intro">
+                    I study at Bethlehem University, I live in the terminal on Arch Linux,
+                    and I'm building my own AI agent.
+                </p>
+                <div class="buttons">
+                    <a href="#projects" class="btn btn-main">See my projects</a>
+                    <a href="#contact" class="btn">Contact me</a>
+                </div>
+            </div>
+            <img src="images/ME.jpg" alt="Hamza Shuibat" class="hero-photo">
+        </section>
+
+        <!-- ===================== ABOUT ===================== -->
+        <section id="about" class="section">
+            <h2>About me</h2>
+            <div class="about">
+                <p class="about-text box">
+                    I'm Hamza, a third-year Software Engineering student at Bethlehem University.
+                    I write Java, I work in the terminal every day, and right now I'm building
+                    my own AI agent, Blueline.
+                </p>
+                <ul class="facts">
+                    <li class="fact"><span>Year</span><span>3rd</span></li>
+                    <li class="fact"><span>University</span><span>Bethlehem</span></li>
+                    <li class="fact"><span>OS</span><span>Arch Linux</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ===================== SKILLS ===================== -->
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <ul class="skills">
+                <li><a href="https://www.w3schools.com/java/default.asp" target="_blank" rel="noopener"
+                        class="skill java">Java</a></li>
+                <li><a href="https://www.w3schools.com/html/default.asp" target="_blank" rel="noopener"
+                        class="skill html">HTML</a></li>
+                <li><a href="https://www.w3schools.com/css/default.asp" target="_blank" rel="noopener"
+                        class="skill css">CSS</a></li>
+                <li><a href="https://www.w3schools.com/js/default.asp" target="_blank" rel="noopener"
+                        class="skill js">JavaScript</a></li>
+                <li><a href="https://www.w3schools.com/bash/index.php" target="_blank" rel="noopener"
+                        class="skill bash">Bash</a></li>
+                <li><a href="https://www.w3schools.com/git/default.asp" target="_blank" rel="noopener"
+                        class="skill git">Git</a>
+                </li>
+                <li><a href="https://www.kernel.org/" target="_blank" rel="noopener" class="skill linux">Linux</a></li>
+            </ul>
+        </section>
+
+        <!-- ===================== PROJECTS ===================== -->
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <div class="projects">
+
+                <article class="project box">
+                    <img src="images/profile.png" alt="Screenshot of my full portfolio website">
+                    <div class="project-body">
+                        <h3>My full portfolio</h3>
+                        <p>A bigger 4-page version of my portfolio, with dark mode, terminals and animations.</p>
+                        <a href="https://kopfror.github.io/Portfolio/" target="_blank" rel="noopener">Visit site</a>
+                    </div>
+                </article>
+
+                <article class="project box">
+                    <img src="images/museum.jpg" alt="Screenshot of the museum web page">
+                    <div class="project-body">
+                        <h3>Museum web page</h3>
+                        <p>A university project: an art museum page about Anton Mauve's painting "Morning Ride Along the
+                            Beach".</p>
+                        <a href="https://kopfror.github.io/Museum-Uni/" target="_blank" rel="noopener">Live demo</a>
+                    </div>
+                </article>
+
+                <article class="project box">
+                    <img src="images/blueline.svg" alt="Drawing of Blueline, my AI agent">
+                    <div class="project-body">
+                        <h3>Blueline</h3>
+                        <p>My own AI agent, still in development.</p>
+                        <a href="https://github.com/kopfror" target="_blank" rel="noopener">Follow on GitHub</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ===================== CONTACT ===================== -->
+        <section id="contact" class="section">
+            <div class="contact box">
+                <h2>Let's talk</h2>
+                <p>Want to work on a project together? Find me here.</p>
+                <div class="buttons">
+                    <a href="mailto:hamza1162006@gmail.com" class="btn">Email</a>
+                    <a href="https://www.linkedin.com/in/hamza-shuibat-36375a200" target="_blank" rel="noopener"
+                        class="btn">LinkedIn</a>
+                    <a href="https://github.com/kopfror" target="_blank" rel="noopener" class="btn">GitHub</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer container">
+        <p>&copy; 2026 Hamza Shuibat</p>
+        <a href="#home">Back to top</a>
+    </footer>
+
+</body>
+
+</html>

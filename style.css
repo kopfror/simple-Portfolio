@@ -1,0 +1,389 @@
+/* ===================== COLORS AND SHARED VALUES ===================== */
+:root {
+    --bg: #7a9e9f;
+    --card: #f7f6f2;
+    --ink: #111111;
+    --soft: #f1dfa6;
+    --muted: #3a3f4a;
+    --line: 3px solid var(--ink);
+    --shadow: 5px 5px 0 var(--ink);
+    --radius: 16px;
+}
+
+/* ===================== BASE ===================== */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Bricolage Grotesque", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+a {
+    color: var(--ink);
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    font-weight: 800;
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.section {
+    padding-top: 100px;
+}
+
+.section h2 {
+    margin-bottom: 28px;
+    font-size: 44px;
+}
+
+/* the card look: off-white, black border, solid shadow */
+.box {
+    background: var(--card);
+    border: var(--line);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+/* ===================== BUTTONS ===================== */
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 26px;
+    background: var(--card);
+    border: var(--line);
+    border-radius: 14px;
+    box-shadow: var(--shadow);
+    font-weight: 800;
+    transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.btn-main {
+    background: var(--soft);
+}
+
+/* hover: the button "gets pressed" into its shadow */
+.btn:hover,
+.project:hover {
+    transform: translate(3px, 3px);
+    box-shadow: 2px 2px 0 var(--ink);
+}
+
+/* ===================== HEADER ===================== */
+.header {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 12px 16px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background: var(--soft);
+    border: var(--line);
+    border-radius: 12px;
+    font-weight: 800;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.nav-links a {
+    display: block;
+    padding: 8px 14px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    background: var(--soft);
+}
+
+.nav-links .nav-contact,
+.nav-links .nav-contact:hover,
+.nav-links .nav-contact:focus,
+.nav-links .nav-contact:visited {
+    background: var(--ink);
+    color: var(--card);
+}
+
+
+/* ===================== HERO ===================== */
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 48px;
+    padding: 72px 0 40px;
+}
+
+.hero-text {
+    flex: 1 1 440px;
+}
+
+.badge {
+    display: inline-block;
+    margin: 0 0 20px;
+    padding: 6px 14px;
+    background: var(--card);
+    border: 2px solid var(--ink);
+    border-radius: 999px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.hero h1 {
+    font-size: clamp(48px, 8vw, 92px);
+    line-height: 0.98;
+}
+
+.hero-intro {
+    max-width: 44ch;
+    margin: 24px 0 32px;
+    font-size: 19px;
+    color: #1a1f24;
+}
+
+.hero-photo {
+    width: 280px;
+    height: 320px;
+    object-fit: cover;
+    border: var(--line);
+    border-radius: 22px;
+    box-shadow: 10px 10px 0 var(--ink);
+    rotate: 3deg;
+}
+
+/* ===================== ABOUT ===================== */
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.about-text {
+    flex: 2 1 420px;
+    margin: 0;
+    padding: 28px;
+    font-size: 18px;
+}
+
+.facts {
+    flex: 1 1 240px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.fact {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 20px;
+    background: var(--card);
+    border: var(--line);
+    border-radius: 14px;
+    font-weight: 700;
+}
+
+/* ===================== SKILLS ===================== */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.skill {
+    display: inline-block;
+    padding: 12px 22px;
+    background: var(--card);
+    border: var(--line);
+    border-radius: 999px;
+    box-shadow: var(--shadow);
+    font-weight: 700;
+    transition: transform 0.15s, box-shadow 0.15s, background-color 0.2s;
+}
+
+/* each skill's own soft color, shown on hover */
+.java {
+    --c: #e76f00;
+}
+
+.html {
+    --c: #e34f26;
+}
+
+.css {
+    --c: #1572b6;
+}
+
+.js {
+    --c: #f7df1e;
+}
+
+.bash {
+    --c: #4eaa25;
+}
+
+.git {
+    --c: #f05032;
+}
+
+.linux {
+    --c: #1793d1;
+}
+
+/* hover: lights up in its color and gets "pressed", like the buttons */
+.skill:hover {
+    background: var(--c);
+    transform: translate(3px, 3px);
+    box-shadow: 2px 2px 0 var(--ink);
+}
+
+/* ===================== PROJECTS ===================== */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+}
+
+.project {
+    flex: 1 1 280px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.project img {
+    display: block;
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-bottom: var(--line);
+}
+
+.project-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 22px;
+}
+
+.project-body p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 15px;
+}
+
+.project-body a {
+    margin-top: auto;
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+/* ===================== CONTACT ===================== */
+.contact {
+    padding: 40px;
+}
+
+.contact h2 {
+    margin-bottom: 12px;
+}
+
+.contact p {
+    margin: 0 0 28px;
+    font-size: 18px;
+}
+
+/* ===================== FOOTER ===================== */
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 80px;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    border-top: var(--line);
+    font-weight: 600;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* ===================== PHONES ===================== */
+@media (max-width: 700px) {
+    .nav {
+        justify-content: center;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        padding-top: 32px;
+    }
+
+    .hero-photo {
+        width: 200px;
+        height: 230px;
+    }
+
+    .section {
+        padding-top: 70px;
+    }
+
+    .section h2 {
+        font-size: 34px;
+    }
+
+    .contact {
+        padding: 26px;
+    }
+}
