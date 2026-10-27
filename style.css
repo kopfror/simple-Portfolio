@@ -61,7 +61,6 @@ h3 {
     font-size: 44px;
 }
 
-/* the card look: off-white, black border, solid shadow */
 .box {
     background: var(--card);
     border: var(--line);
@@ -91,7 +90,6 @@ h3 {
     background: var(--soft);
 }
 
-/* hover: the button "gets pressed" into its shadow */
 .btn:hover,
 .project:hover {
     transform: translate(3px, 3px);
@@ -248,7 +246,6 @@ h3 {
     transition: transform 0.15s, box-shadow 0.15s, background-color 0.2s;
 }
 
-/* each skill's own soft color, shown on hover */
 .java {
     --c: #e76f00;
 }
@@ -277,7 +274,6 @@ h3 {
     --c: #1793d1;
 }
 
-/* hover: lights up in its color and gets "pressed", like the buttons */
 .skill:hover {
     background: var(--c);
     transform: translate(3px, 3px);
